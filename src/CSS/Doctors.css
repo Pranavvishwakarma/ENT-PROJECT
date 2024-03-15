@@ -98,7 +98,6 @@ btn-group>.btn-group:not(:first-child)>.btn,
 
 }
 .doctor-cover-image{
-    /* position: absolute; */
     width: 100%;
     height: 31.5rem;
     border-radius: 1rem;
