@@ -1,0 +1,237 @@
+body{margin-top:20px;
+    background:#f5f5f5;
+    }
+    
+
+.chatbot-icon {
+  animation: bounce 2s infinite;
+}
+
+/* Smooth transition for chat window */
+.chat-window {
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  transform: scale(0);
+  opacity: 0;
+}
+
+/* State when chat window is visible */
+.chat-window.show {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.chatbot-ui {
+  position: fixed;
+  bottom: 90px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.chatbot-icon {
+  cursor: pointer;
+}
+
+.chat-window {
+  width: 300px; /* Corrected typo here */
+  max-height: 500px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-window-header {
+  background-color: #3368c1;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+.chat-window-messages {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+.chat-window-input {
+  border: none;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.chatp {
+  height: 100px;
+}
+
+
+
+
+
+
+.main-logo{
+  height: 48px;
+
+
+.pbmit-ele:hover {
+  transform: scale(1.05); /* Slightly enlarges the article on hover */
+  z-index: 2; 
+}
+
+.pbmit-element-title {
+  font-size: 65px; /* Adjust based on preference */
+  font-weight: bold;
+  display:flex;
+  color: #6c769d; /* Darker text color for better readability */
+  text-shadow: 1px 1px 4px rgba(89, 134, 180, 0.2); /* Text shadow for depth */
+}
+
+/* Custom styling for the tag wrapper to improve aesthetics */
+.pbmit-tag-wrapper {
+  padding: 10px 0; /* Adds vertical padding */
+  margin: 0 5px; /* Adds spacing between each marquee item */
+  background-color: rgba(255,255,255,0.8); 
+  border-radius: 5px; /* Rounds the corners of the tag wrapper */
+}
+
+.list-unstyled{
+  font-size: 20px;
+  
+}
+
+.list-unstyled li a{ 
+  color: #333;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+   text-decoration: none;
+}
+
+
+/* our services */
+.ourservices{
+  height: 32px;
+
+
+}
+
+
+
+
+/* internal css*/
+ 
+/* happy client */
+
+.pbmit-element-subtitle {
+  font-size: 1.25rem;
+  color: #666;
+}
+
+/* Testimonials Grid */
+.pbmit-element-posts-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+
+}
+
+.pbmit-ele-testimonial {
+  flex: 0 1 calc(33.333% - 20px);
+  /* background: #f9f9f9; */
+  border: 1px solid #ddd;
+  box-shadow: 2px 0px  4px rgb(219, 205, 205);
+  padding: 20px;
+  background-color: transparent;
+  border-radius: 26px;
+}
+
+.pbmit-box-content-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.pbminfotech-box-img img {
+  width: 100px;
+  height: 100px;
+
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.pbminfotech-box-title,
+.pbminfotech-testimonial-detail {
+  margin: 5px 0;
+}
+
+.pbminfotech-testimonial-box {
+font-style: italic;
+
+padding: 23px;
+display: block; /* Changed to block to better handle the box model */
+position: relative;
+/* Making the width responsive */
+margin: 0 auto; /* Centering the box */
+box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Adding a subtle shadow to create a "lifted" effect */
+background-color: #f9f9f9; /* A light background to distinguish the testimonial */
+border-left: 4px solid #007bff; /* A colored border on the left for some visual flair */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+.pbminfotech-testimonial-box {
+    max-width: 95%; /* Allowing more width on smaller screens */
+    padding: 15px; /* Adjusting padding for smaller screens */
+}
+}
+
+
+.pbminfotech-box-star-ratings {
+  margin-bottom: 15px;
+}
+
+.pbmit-base-icon-star-1 {
+  color: #ffd700; /* Gold color for stars */
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .pbmit-ele-testimonial {
+    flex: 0 1 calc(50% - 20px);
+  }
+}
+
+/* @media (max-width: 480px) {
+  .pbmit-ele-testimonial {
+    flex: 0 1 100%;
+  }
+
+  .pbmit-element-title,
+  .pbmit-element-subtitle {
+    font-size: 1.5rem;
+  }
+} */
+/* Container that needs scrolling */
+.pbmit-element-posts-wrapper {
+  /* Enable scrolling if necessary */
+  overflow-y: auto; /* Vertical scrolling */
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+  max-height: 600px; /* Adjust based on your needs */
+  scrollbar-width: thin; /* For Firefox */
+  scrollbar-color: rgba(0, 0, 0, 0.5) transparent;
+}
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.pbmit-ele-testimonial-anim {
+  animation: slideInFromLeft 1s ease-out;
+}
+}

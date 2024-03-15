@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENT Care</title>
+    <link rel="stylesheet" href="../CSS/Home.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+   <link rel="stylesheet" href="../CSS/Home.css">
+ <link rel="stylesheet" href="../CSS/styles.css">
+<link rel="stylesheet" href="../CSS/navigate (1).css">
+  
+</head>
+
+<body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="https://xcare-demo.pbminfotech.com/demo1/wp-content/uploads/sites/3/2024/01/logo.svg" alt="" class="main-logo"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../HTML/Home.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./about.html">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Services
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="./Ear_Page.HTML">Ear</a></li>
+                  <li><a class="dropdown-item" href="./noseservice.html">Nose</a></li>
+                  <li><a class="dropdown-item" href="./Throat-service.html">Throat</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./doctors.html">Doctors</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./Contacts.html">Contact Us</a>
+              </li>
+            </ul>
+            <ul class="btn-group my-auto">
+              <button class="btn btn-outline-success" type="submit"><a href="./feedback.html" style="list-style: none; text-decoration: none; color: white;" >Feedback Form</a></button>
+              <button class="btn btn-outline-success"  type="submit"><a style="list-style: none; text-decoration: none; color: white;" href="./AppointmentPage.html">Appointment Form</a></button>
+            </ul>
+          </div>
+        </div>
+      </nav>
+     
+    </header>
+
+    <div>
+            <div class="image-box">
+                <!-- Adding image here -->
+                <img style="height: 500px;" src="../Images/Vecteezy_medicine-doctor-hand-working-on-a-patients-x-ray-scans_11895248.jpg"
+                    alt="Placeholder Image">
+                    <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; color: white;">
+                      <div class="animated-text" style="font-size: 4em;">ENT Care Hospital</div>
+            </div>
+
+
+
+    <div>
+        <section id="emergency">
+            <div class="container">
+                
+                <div class="row">
+                  <marquee direction="right" behavior="alternate"
+                  style="border:rgb(203, 193, 193) 1px SOLID" >
+                      <h2 style=" color: blue;">24 Hour Emergency </h2>
+                  </marquee>
+                        <div class="BLOG">
+                            <big>Our clinic is equipped with modern facilities and advanced medical technology to ensure
+                            accurate diagnoses and effective treatments. This enables us to provide you with the highest
+                            standard of care.</big>
+                        </div>
+                </div>
+            </div>
+        </section>
+    </div>
+<div class="appointment-container">
+
+
+        <div class="appointment-form">
+            <section id="appointment">
+                <form>
+                  
+                    <label for="name">Your Name *</label>
+                    <input type="text" id="name" name="name" class="form-control" required>
+                    <label for="email">Your Email *</label>
+                    <input type="email" id="email" name="email" class="form-control" required>
+                    <label for="phone">Your Phone *</label>
+                    <input type="tel" id="phone" name="phone" class="form-control" required>
+                    <label for="date">Appointment Date</label>
+                    <input type="date" id="date" name="date" class="form-control">
+                    <label for="department">Choose Department</label>
+                    <select id="department" name="department" class="form-control">
+                        <option value="general">General</option>
+                        <option value="surgery">Surgery</option>
+                        <option value="dentistry">Dentistry</option>
+                        <!-- Add more department options as needed -->
+                    </select>
+                    
+                    <label for="doctor">Choose Doctor</label>
+                    <select id="doctor" name="doctor" class="form-control">
+                        <option value="dr1">Dr. Smith</option>
+                        <option value="dr2">Dr. Johnson</option>
+                        <option value="dr3">Dr. Williams</option>
+                        <!-- Add more doctor options as needed -->
+                    </select>
+                    <label for="note">Type Appointment Note</label>
+                    <textarea id="note" name="note" class="form-control"></textarea>
+                    
+                    <div style="display: flex; justify-content: space-between;">
+                      <!-- Leftmost checkbox -->
+                      <div>
+                          <input type="checkbox">
+                          <label for="">Appointment confirmation</label>
+                      </div>
+                      <!-- Rightmost checkbox -->
+                      <div>
+                          <input type="checkbox">
+                          <label for="">Appointment reminder</label>
+                      </div>
+                  </div>
+                    <!-- Custom appointment confirmation and reminder checkboxes -->
+                   
+
+                    <button type="submit" class="btn btn-primary">SUBMIT NOW</button>
+                </form>
+        </div>
+        </section>
+    </div>
+
+
+    <div style="margin-top: 10px;margin-bottom: 30px;margin-left: 20px;margin-right: 20px;">
+      <p>
+      <strong>
+      <h3>Department of ENT</h3>
+      </strong>
+      </p>
+      <p>This department deals with the treatment of ear, nose and throat conditions in adults as well as children. Additionally, issues in hearing, deafness, ringing in the ears, and pain around the adjacent area are all treated in this centre. Procedures like Bronchoscopy, Esophagoscopy - diagnostics as well as Therapeutic are all performed here by our expert team of doctors. The hospital makes sure to use the latest technologies in this field as well as keeps updating its team to ensure that it breeds nothing but excellence in terms of results. </p>
+    </div>
+    <div style="margin-top: 10px;margin-bottom: 30px;margin-left: 20px;margin-right: 20px;">
+      <p><strong><h3>Why Choose ENT CARE Hospitals?</h3></strong></p>
+      <p>In the department, we have all the latest pieces of equipment related to ENT surgeries including operative microscope motor drills and equipment for endoscopic surgeries. Our goal is to meet the expectations of our patients effectively by following a tactical treatment based on an accurate diagnosis.</p>
+    </div>
+    </div>
+   
+
+
+    <footer class="page-footer font-small indigo" style=" color:white; padding-top: 34px;background-color:#004085;">
+
+      <!-- Footer Links -->
+      <div class="container text-center text-md-left">
+    
+        <!-- Grid row -->
+        <div class="row">
+    
+          <!-- Grid column -->
+          <div class="col-md-3 mx-auto">
+    
+            <!-- Links -->
+            <h5 class="font-weight-bold text-uppercase mt-3 mb-4">OUR MISSION</h5>
+    
+            <ul class="list-unstyled" >
+              <li>
+                <a href="#!" >Useful Link</a>
+              </li>
+              <li>
+                <a href="#!">Company</a>
+              </li>
+              <li>
+                <a href="#!">About</a>
+              </li>
+              <li>
+                <a href="#!">Contact</a>
+              </li>
+            </ul>
+    
+          </div>
+          <!-- Grid column -->
+    
+          <hr class="clearfix w-100 d-md-none">
+    
+          <!-- Grid column -->
+          <div class="col-md-3 mx-auto">
+    
+            <!-- Links -->
+            <h5 class="font-weight-bold text-uppercase mt-3 mb-4">AWARDS</h5>
+    
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!">Link 1</a>
+              </li>
+              <li>
+                <a href="#!">Link 2</a>
+              </li>
+              <li>
+                <a href="#!">Link 3</a>
+              </li>
+              <li>
+                <a href="#!">Link 4</a>
+              </li>
+            </ul>
+    
+          </div>
+          
+    
+          <hr class="clearfix w-100 d-md-none">
+    
+   
+          <div class="col-md-3 mx-auto">
+    
+        
+            <h5 class="font-weight-bold text-uppercase mt-3 mb-4">EXPERIANCE</h5>
+    
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!">Link 1</a>
+              </li>
+              <li>
+                <a href="#!">Link 2</a>
+              </li>
+              <li>
+                <a href="#!">Link 3</a>
+              </li>
+              <li>
+                <a href="#!">Link 4</a>
+              </li>
+            </ul>
+    
+          </div>
+       
+          <hr class="clearfix w-100 d-md-none">
+    
+      
+          <div class="col-md-3 mx-auto">
+    
+          
+            <h5 class="font-weight-bold text-uppercase mt-3 mb-4">SUCCES STORY</h5>
+    
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!">Link 1</a>
+              </li>
+              <li>
+                <a href="#!">Link 2</a>
+              </li>
+              <li>
+                <a href="#!">Link 3</a>
+              </li>
+              <li>
+                <a href="#!">Link 4</a>
+              </li>
+            </ul>
+    
+          </div>
+        
+    
+        </div>
+        
+    
+      </div>
+     
+      <div class="footer-copyright text-center py-3" style="color: white;text-decoration: none;" >© 2024 Copyright:
+        <a href="/" style="text-decoration: none; color: rgb(193, 229, 248);">ENT Care Hospital</a>
+      </div>
+      
+    
+    </footer>
+<!-- Footer -->
+    
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- <script src="script.js"></script>  -->
+
+    </div>
+    </body>
+    </html>
+    

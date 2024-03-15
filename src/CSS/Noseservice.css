@@ -1,0 +1,214 @@
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Header styles */
+header {
+    
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+/* Navigation styles */
+nav ul {
+    list-style: none;
+    margin-top: 20px; /* Added margin for better spacing */
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Main content styles */
+.appointment-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#emergency {
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+/* Appointment form styles */
+.appointment-form {
+    background-color: #d2d3dd;
+    padding: 20px;
+    width: 90%; /* Adjusted width */
+    margin: 20px auto; /* Centered with some top margin */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    max-width: 800px; /* Set a maximum width */
+}
+
+.appointment-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.appointment-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.appointment-form form label,
+.appointment-form form input,
+.appointment-form form select,
+.appointment-form form textarea {
+    width: 100%;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+.appointment-form form textarea {
+    height: 100px;
+}
+
+/* Additional CSS for the custom checkboxes */
+.custom-checkbox {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    padding-left: 25px;
+    margin-right: 15px;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.custom-checkbox input[type="checkbox"] {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    border-radius: 3px;
+}
+
+.custom-checkbox input[type="checkbox"]:checked~.checkmark:after {
+    display: block;
+}
+
+.custom-checkbox .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+    left: 6px;
+    top: 2px;
+    width: 6px;
+    height: 11px;
+    border: solid #0c0444;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+
+.custom-checkbox label {
+    color: #555;
+    margin-bottom: 0;
+}
+
+.appointment-form button[type="submit"] {
+    background-color: #6753c7;
+    color: #fff;
+    border: none;
+    width: 100%;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.appointment-form button[type="submit"]:hover {
+    background-color: #4e3ab8;
+}
+
+/* Image box styles */
+.image-box {
+    width: 100%;
+}
+
+.image-box img {
+    width: 100%;
+    height: 400%; /* Ensure image aspect ratio is maintained */
+}
+.main-logo{
+    height: 3rem;
+    width: 10rem;
+
+}
+/* Footer styles */
+.page-footer {
+    background-color: #06174a; /* Dark background color for footer */
+    color: #fff; /* White text color */
+    padding: 20px 0;
+    text-align: center; /* Center text */
+}
+
+.page-footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.page-footer ul li {
+    margin-bottom: 20px;
+}
+
+.page-footer ul li a {
+    color: #fff; /* White color for footer links */
+    text-decoration: none;
+}
+
+.page-footer ul li a:hover {
+    color: #007bff; /* Blue color on hover for footer links */
+}
+
+.footer-copyright {
+    background-color: #e1e6ea; /* Darker background for copyright */
+    color: #080928; /* Light gray text color */
+    padding: 10px 0; /* Adjusted padding */
+}
+/* Media Queries for responsiveness */
+@media screen and (max-width: 768px) {
+    nav ul li {
+        display: block; /* Change to block display on smaller screens */
+        margin-right: 0; /* Remove margin between list items */
+        margin-bottom: 10px; /* Add bottom margin for spacing */
+    }
+
+    nav ul {
+        text-align: center; /* Center the navigation items */
+    }
+
+    .appointment-form {
+        width: 90%; /* Adjusted width for smaller screens */
+    }
+}
